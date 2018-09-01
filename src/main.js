@@ -47,14 +47,6 @@ client.on('message', message => {
       case 'withdraw':
         Commands.withdraw(message, dogecoin, args[2], args[3])
         break
-      case 'adopt':
-        message.reply('Wow wow')
-        break
-      case 'goodboy':
-        if (giphyApiKey !== null && giphyApiKey !== '') {
-          Commands.goodboy(message, giphyApiKey)
-        }
-        break
       case 'qrcode':
         Commands.qrcode(message, dogecoin, Discord)
         break
