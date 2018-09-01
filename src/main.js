@@ -24,7 +24,7 @@ client.on('message', message => {
   // If message has been emitted by a bot do nothing
   if (message.author.bot) return
 
-  if (message.content.startsWith('/fla')) {
+  if (message.content.startsWith('-')) {
     var args = message.content.substring(1).split(' ')
     var command = args[1]
 
