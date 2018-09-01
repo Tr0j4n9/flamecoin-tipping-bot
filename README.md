@@ -1,4 +1,4 @@
-##Flamecoin Tipping Bot for Discord
+## Flamecoin Tipping Bot for Discord
 
 Allow you tip flamecoin in your discord chat.
 
