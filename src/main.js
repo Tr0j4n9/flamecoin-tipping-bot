@@ -61,8 +61,6 @@ client.on('message', message => {
       case 'voucher':
         Commands.voucher(message, dogecoin, args[2])
         break
-      default:
-        message.reply('pong')
     }
   } else {
     // Special maxslayer44
