@@ -1,6 +1,5 @@
 const { OOPS_TEXT } = require('../messages')
 
-const TIP_TEXT = 'Tipped.'
 const PROPER_AMOUNT_TEXT = 'You need provide a proper amount to be sent'
 const NO_COMMA_TEXT = 'Please avoid "," in your amount and use "."'
 const NEED_USER_TEXT = 'Need a user as a third argument'
@@ -55,7 +54,7 @@ function tip (message, dogecoinNode, amount) {
         return
       }
 
-      message.reply(TIP_TEXT)
+      message.reply('Tipped.')
     })
   })
 }
