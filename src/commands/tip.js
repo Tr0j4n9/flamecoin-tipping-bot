@@ -29,6 +29,7 @@ function tip (message, dogecoinNode, amount) {
 
   var fromAccount = message.author.tag.replace('#', '')
   var toAccount = to.username + to.discriminator
+  var accountName = to.username
   
   if (fromAccount === toAccount) {
     message.reply(CANT_TIP)
@@ -54,7 +55,7 @@ function tip (message, dogecoinNode, amount) {
         return
       }
 
-      message.reply('Tipped ' + amountInt + ' Flamecoin to ' + toAccount)
+      message.reply('Tipped ' + amountInt + ' Flamecoin to ' + accountName)
     })
   })
 }
