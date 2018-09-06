@@ -54,7 +54,7 @@ function tip (message, dogecoinNode, amount) {
         return
       }
 
-      message.reply('Tipped.')
+      message.reply('Tipped ' + amountInt + ' Flamecoin to ' + toAccount)
     })
   })
 }
